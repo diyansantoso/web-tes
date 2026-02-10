@@ -1,4 +1,6 @@
-import { Smartphone,Wrench, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Smartphone, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import logo from '../../assets/logo.png';
+import React from 'react';
 
 export function Footer() {
   return (
@@ -9,7 +11,7 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               {/* <Smartphone className="w-7 h-7 text-blue-500" /> */}
-              <img src="./images/logo.png" alt="iRepair Logo" className="h-8 w-auto" />
+              <img src={logo} alt="iRepair Logo" className="h-8 w-auto" />
               <span className="text-xl font-semibold text-white">iRepair</span>
             </div>
             <p className="text-sm text-gray-400 mb-4">

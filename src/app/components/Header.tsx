@@ -1,5 +1,8 @@
-import { Smartphone, Wrench, Menu, X } from 'lucide-react';
+import { Smartphone, Menu, X } from 'lucide-react';
 import { useState } from 'react';
+
+import logo from '../../assets/logo.png';
+import React from 'react';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,7 +15,7 @@ export function Header() {
           <div className="flex items-center gap-2">
             {/* <Wrench className="w-7 h-7 text-blue-600" /> */}
             
-            <img src="./images/logo.png" alt="iRepair Logo" className="h-8 w-auto" />
+            <img src={logo} alt="iRepair Logo" className="h-8 w-auto" />
             <span className="text-xl font-semibold text-gray-900">iRepair</span>
           </div>
 
