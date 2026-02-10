@@ -1,4 +1,4 @@
-import { Smartphone, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Smartphone,Wrench, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -8,7 +8,8 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Smartphone className="w-7 h-7 text-blue-500" />
+              {/* <Smartphone className="w-7 h-7 text-blue-500" /> */}
+              <img src="./images/logo.png" alt="iRepair Logo" className="h-8 w-auto" />
               <span className="text-xl font-semibold text-white">iRepair</span>
             </div>
             <p className="text-sm text-gray-400 mb-4">
@@ -104,18 +105,18 @@ export function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Contact</h3>
             <ul className="space-y-2 text-sm">
-              <li>123 Tech Street, Suite 100</li>
-              <li>San Francisco, CA 94102</li>
+              <li>Jl. Batu Bolong</li>
+              <li>Canggu, Bali 80361</li>
               <li>
-                <a href="tel:+15551234567" className="hover:text-blue-500 transition-colors">
-                  +1 (555) 123-4567
+                <a href="https://wa.me/6282227565452" className="hover:text-blue-500 transition-colors">
+                  0822-2756-5452
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="mailto:info@irepair.com" className="hover:text-blue-500 transition-colors">
                   info@irepair.com
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

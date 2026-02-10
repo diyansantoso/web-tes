@@ -1,4 +1,4 @@
-import { Smartphone, Menu, X } from 'lucide-react';
+import { Smartphone, Wrench, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
 export function Header() {
@@ -10,7 +10,9 @@ export function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <Smartphone className="w-7 h-7 text-blue-600" />
+            {/* <Wrench className="w-7 h-7 text-blue-600" /> */}
+            
+            <img src="./images/logo.png" alt="iRepair Logo" className="h-8 w-auto" />
             <span className="text-xl font-semibold text-gray-900">iRepair</span>
           </div>
 
