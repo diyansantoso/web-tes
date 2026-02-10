@@ -1,8 +1,10 @@
 import { Smartphone, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
+// Import logo
 import logo from '../../assets/logo.png';
 import React from 'react';
+import { Link } from 'react-router-dom'; // Pastikan sudah install react-router-dom
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,9 +16,8 @@ export function Header() {
           {/* Logo */}
           <div className="flex items-center gap-2">
             {/* <Wrench className="w-7 h-7 text-blue-600" /> */}
-            
-            <img src={logo} alt="iRepair Logo" className="h-8 w-auto" />
-            <span className="text-xl font-semibold text-gray-900">iRepair</span>
+            <a href="/"><img src={logo} alt="iRepair Logo" className="w-8 h-8"/></a>
+            <a href="/"><span className="text-xl font-semibold text-gray-900">iRepair</span></a>
           </div>
 
           {/* Desktop Navigation */}

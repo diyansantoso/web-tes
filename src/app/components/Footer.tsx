@@ -11,8 +11,8 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               {/* <Smartphone className="w-7 h-7 text-blue-500" /> */}
-              <img src={logo} alt="iRepair Logo" className="h-8 w-auto" />
-              <span className="text-xl font-semibold text-white">iRepair</span>
+              <a href="/"><img src={logo} alt="iRepair Logo" className="h-8 w-auto" /></a>
+              <a href="/"><span className="text-xl font-semibold text-white">iRepair</span></a>
             </div>
             <p className="text-sm text-gray-400 mb-4">
               Your trusted partner for professional Apple device repair services.
